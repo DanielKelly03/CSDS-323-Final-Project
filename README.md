@@ -100,11 +100,14 @@ This script will generate bar plots comparing the compression ratio and accuracy
 train_cifar10vgg.py: This script trains a VGG-like model on the CIFAR-10 dataset and saves the model architecture and weights.
 Exp_Cifar10_w.py: This script applies SVD-based compression to the model and evaluates its performance.
 Plot.py: This script generates bar plots comparing compression ratios and accuracies across different methods and ranks.
+
 **Model Details:**
 Model Architecture: A VGG-like Convolutional Neural Network (CNN) designed for the CIFAR-10 dataset.
+
 **Compression Techniques:**
 SVD (Singular Value Decomposition): A method that reduces the rank of the model’s weight matrices, approximating them with a lower-rank matrix.
 SLR (Sparse Low-Rank): A technique that combines sparsity with low-rank approximations for further compression.
+
 **Results:**
 The performance of the model and the compression ratio achieved by each technique are reported, including accuracy before and after compression.
 The compression ratio is calculated by the number of parameters after compression divided by the number of parameters before compression.
